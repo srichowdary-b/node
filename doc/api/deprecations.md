@@ -4522,11 +4522,14 @@ deprecated and will throw an error in a future version.
 <!-- YAML
 changes:
   - version: REPLACEME
+    pr-url: https://github.com/nodejs/node/pull/62401
+    description: Runtime deprecation.
+  - version: REPLACEME
     pr-url: https://github.com/nodejs/node/pull/62395
     description: Documentation-only deprecation.
 -->
 
-Type: Documentation-only
+Type: Runtime
 
 [`module.register()`][] is deprecated. Use [`module.registerHooks()`][]
 instead.
