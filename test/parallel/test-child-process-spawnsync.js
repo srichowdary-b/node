@@ -92,4 +92,6 @@ assert.deepStrictEqual(ret_err.spawnargs, ['bar']);
     { stdio: ['inherit', childA.stdin, 'inherit'] });
 
   assert.strictEqual(result.status, 0);
+  // Explicitly close the wrapped stream on the parent side so childA receives EOF.
+  childA.stdin.end();
 }
